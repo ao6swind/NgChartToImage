@@ -1,0 +1,15 @@
+[
+    { "id": 1, "building_id": 1, "name": "招生組" },
+    { "id": 2, "building_id": 1, "name": "學服組" },
+    { "id": 3, "building_id": 1, "name": "學分組" },
+    { "id": 4, "building_id": 1, "name": "國教組" },
+    { "id": 5, "building_id": 1, "name": "測培組" },
+    { "id": 6, "building_id": 1, "name": "總務組" },
+    { "id": 7, "building_id": 1, "name": "資訊組" },
+    { "id": 8, "building_id": 2, "name": "教育系" },
+    { "id": 9, "building_id": 2, "name": "心輔系" },
+    { "id": 10, "building_id": 3, "name": "工教系" },
+    { "id": 11, "building_id": 3, "name": "科技組" },
+    { "id": 12, "building_id": 3, "name": "圖傳組" },
+    { "id": 13, "building_id": 3, "name": "電機組" }
+]

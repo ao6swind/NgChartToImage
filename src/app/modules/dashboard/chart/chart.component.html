@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-sm-12 col-md-2">
+    <div class="form-group">
+      <select class="form-control" (change)="setDepartments($event)">
+        <option value="">請選擇大樓</option>
+        <option *ngFor="let building of buildings" value="{{ building.id }}">
+          {{ building.name }}
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <select class="form-control" (change)="getLogs($event)">
+        <option value="" *ngIf="building_id == null || building == ''">請先選擇大樓</option>
+        <option value="" *ngIf="building_id != null && building != ''">請選擇部門</option>
+        <option *ngFor="let department of departments" value="{{ department.id }}">
+          {{ department.name }}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-10">
+    <div *ngIf="statistics.length > 0">
+      <div style="display: block">
+        <canvas baseChart
+          [datasets]="statistics"
+          [labels]="labels"
+          [legend]="legend"
+          [chartType]="type"></canvas>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="export()">匯出</button>
+    </div>
+  </div>
+</div>

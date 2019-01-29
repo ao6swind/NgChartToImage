@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">訪客管理系統</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pnlNavbar" aria-controls="pnlNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="pnlNavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="">圖表</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="log">匯出紀錄</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div id="pnlMainBody" class="container-fluid pt-3 pb-3">
+  <router-outlet></router-outlet>
+</div>
+<footer class="p-5 bg-primary text-white text-center">
+  Wind &copy; {{ current | date:'yyyy' }}
+</footer>

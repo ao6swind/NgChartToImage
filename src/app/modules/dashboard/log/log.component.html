@@ -1,0 +1,14 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">匯出日期</th>
+      <th scope="col">圖表下載</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let log of logs">
+      <td>{{ log.datetime }}</td>
+      <td><a [href]="log.image | safeHtml" download="export.png">Download</a></td>
+    </tr>
+  </tbody>
+</table>
